@@ -24,14 +24,17 @@ final class ViewController: UIViewController {
         self.view.layer.addSublayer(self.shapeLayer)
         
         self.shapeLayer.ax
-            .move(x: 200.0)
-            .play(for: 0.4, delay: 2.0)
+            .move(x: 200.0, y: 200.0)
+            .scale(width: 200.0)
+            .backgroundColor(to: .cyan)
+            .cornerRadius(with: 56 / 2)
+            .play(for: 0.4, delay: 2.0) 
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        self.shapeLayer.position = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
+//        self.shapeLayer.position = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
     }
     
 }

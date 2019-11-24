@@ -32,7 +32,7 @@ extension Animating where Base: CALayer {
                      y: CGFloat) -> Animating<Base> {
         
         // 1. Declare type
-        let type: AnimationEnums = .x
+        let type: AnimationEnums = .position
         self.animationEnums.append(type)
         
         let from = self.base.bounds.origin
@@ -81,7 +81,7 @@ extension Animating where Base: View {
                      y: CGFloat) -> Animating<Base> {
         
         // 1. Declare type
-        let type: AnimationEnums = .origin
+        let type: AnimationEnums = .position
         self.animationEnums.append(type)
         
         let from = self.base.layer.bounds.origin
