@@ -71,6 +71,7 @@
 		C47CE753238A7E80002F8CDC /* Animating.UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animating.UIView.swift; sourceTree = "<group>"; };
 		C47CE758238A7EC2002F8CDC /* Animating.AppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animating.AppKit.swift; sourceTree = "<group>"; };
 		C47CE75A238A7F19002F8CDC /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
+		C47CE75C238A86AD002F8CDC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 		C47CE6FB238A70CF002F8CDC = {
 			isa = PBXGroup;
 			children = (
+				C47CE75C238A86AD002F8CDC /* README.md */,
 				C47CE73C238A7DBA002F8CDC /* Example */,
 				C47CE707238A70CF002F8CDC /* AnimationOps */,
 				C47CE712238A70CF002F8CDC /* AnimationOpsTests */,
