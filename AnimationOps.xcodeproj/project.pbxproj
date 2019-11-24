@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C47CE70F238A70CF002F8CDC /* AnimationOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47CE705238A70CF002F8CDC /* AnimationOps.framework */; };
 		C47CE714238A70CF002F8CDC /* AnimationOpsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47CE713238A70CF002F8CDC /* AnimationOpsTests.swift */; };
 		C47CE716238A70CF002F8CDC /* AnimationOps.h in Headers */ = {isa = PBXBuildFile; fileRef = C47CE708238A70CF002F8CDC /* AnimationOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C47CE720238A70E5002F8CDC /* Animating.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47CE71F238A70E5002F8CDC /* Animating.swift */; };
@@ -33,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C47CE710238A70CF002F8CDC /* PBXContainerItemProxy */ = {
+		C47CE75D238A8A86002F8CDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C47CE6FC238A70CF002F8CDC /* Project object */;
 			proxyType = 1;
@@ -86,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47CE70F238A70CF002F8CDC /* AnimationOps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +256,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C47CE711238A70CF002F8CDC /* PBXTargetDependency */,
+				C47CE75E238A8A86002F8CDC /* PBXTargetDependency */,
 			);
 			name = AnimationOpsTests;
 			productName = AnimationOpsTests;
@@ -394,10 +392,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C47CE711238A70CF002F8CDC /* PBXTargetDependency */ = {
+		C47CE75E238A8A86002F8CDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C47CE704238A70CF002F8CDC /* AnimationOps */;
-			targetProxy = C47CE710238A70CF002F8CDC /* PBXContainerItemProxy */;
+			targetProxy = C47CE75D238A8A86002F8CDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
