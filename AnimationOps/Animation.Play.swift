@@ -11,12 +11,13 @@ import QuartzCore
 
 extension Animating where Base: CALayer {
     
+    @discardableResult
     public func play(for duration: TimeInterval,
                      delay: TimeInterval = 0.0,
                      timingFunction: CAMediaTimingFunction = CAMediaTimingFunction(name: .easeInEaseOut),
                      fillMode: CAMediaTimingFillMode = .forwards,
                      isRemovedOnCompletion: Bool = false,
-                     completion: (() -> Void)? = nil) {
+                     completion: (() -> Void)? = nil) -> CAAnimationGroup {
         
         self.group.duration = duration
         self.group.beginTime = CACurrentMediaTime() + delay
@@ -40,18 +41,21 @@ extension Animating where Base: CALayer {
         // Add animation with unique id
         let id = String(ObjectIdentifier(self.group).hashValue)
         self.base.add(self.group, forKey: id)
+        
+        return self.group
     }
     
 }
 
 extension Animating where Base: View {
     
+    @discardableResult
     public func play(for duration: TimeInterval,
                      delay: TimeInterval = 0.0,
                      timingFunction: CAMediaTimingFunction = CAMediaTimingFunction(name: .easeInEaseOut),
                      fillMode: CAMediaTimingFillMode = .forwards,
                      isRemovedOnCompletion: Bool = false,
-                     completion: (() -> Void)? = nil) {
+                     completion: (() -> Void)? = nil) -> CAAnimationGroup {
         
         self.group.duration = duration
         self.group.beginTime = CACurrentMediaTime() + delay
@@ -75,6 +79,8 @@ extension Animating where Base: View {
         // Add animation with unique id
         let id = String(ObjectIdentifier(self.group).hashValue)
         self.base.layer.add(self.group, forKey: id)
+        
+        return self.group 
     }
     
 }
