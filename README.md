@@ -1,8 +1,5 @@
 #  AnimationOps 
 
-
-#
-
 AnimationOps is a small µ-framework that aims to make Core Animation easy to utilize.
 
 
@@ -11,13 +8,13 @@ AnimationOps is a small µ-framework that aims to make Core Animation easy to ut
 
 AnimationOps is available via Carthage, just add to your Cartfile like so:
 
-`Cartfile`
+**Cartfile**
 ```
 # Property obsersation
 github "ZkHaider/AnimationOps" "master"
 ```
 
-`Terminal`
+**Terminal**
 ```shell 
 $ carthage update
 ```
