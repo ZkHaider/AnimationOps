@@ -9,7 +9,7 @@
 import Foundation
 import QuartzCore
 
-public struct Animating<Base> {
+public final class Animating<Base> {
     
     // MARK: - Attributes 
     
@@ -21,7 +21,7 @@ public struct Animating<Base> {
     
     /// Group of enums identifying which animations were used, this helps us set the presentation
     /// layer properties to the base layer without applying all the properties
-    internal private(set) var animationEnums: [AnimationEnums] = []
+    internal var animationEnums: [AnimationEnums] = []
     
     // MARK: - Init
     

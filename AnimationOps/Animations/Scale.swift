@@ -33,12 +33,13 @@ extension Animating where Base: CALayer {
         
         // 1. Declare type
         let type: AnimationEnums = .size
+        self.animationEnums.append(type)
         
         let from = self.base.bounds.size
         let to = CGSize(width: width, height: height)
         
         // 2. Create animation
-        let size = CABasicAnimation(keyPath: type.rawValue)
+        let size = CABasicAnimation(keyPath: type.keyPath)
         size.fromValue = from.nsValue
         size.toValue = to.nsValue
         
@@ -79,12 +80,13 @@ extension Animating where Base: View {
         
         // 1. Declare type
         let type: AnimationEnums = .size
+        self.animationEnums.append(type)
         
         let from = self.base.layer.bounds.size
         let to = CGSize(width: width, height: height)
         
         // 2. Create animation
-        let size = CABasicAnimation(keyPath: type.rawValue)
+        let size = CABasicAnimation(keyPath: type.keyPath)
         size.fromValue = from.nsValue
         size.toValue = to.nsValue
         

@@ -16,12 +16,13 @@ extension Animating where Base: CALayer {
         
         // 1. Declare type
         let type: AnimationEnums = .cornerRadius
+        self.animationEnums.append(type)
         
         let from = self.base.cornerRadius.nsNumber
         let to = radius.nsNumber
         
         // 2. Create animation
-        let cornerRadius = CABasicAnimation(keyPath: type.rawValue)
+        let cornerRadius = CABasicAnimation(keyPath: type.keyPath)
         cornerRadius.fromValue = from
         cornerRadius.toValue = to
         
@@ -45,12 +46,13 @@ extension Animating where Base: View {
         
         // 1. Declare type
         let type: AnimationEnums = .cornerRadius
+        self.animationEnums.append(type)
         
         let from = self.base.layer.cornerRadius.nsNumber
         let to = radius.nsNumber
         
         // 2. Create animation
-        let cornerRadius = CABasicAnimation(keyPath: type.rawValue)
+        let cornerRadius = CABasicAnimation(keyPath: type.keyPath)
         cornerRadius.fromValue = from
         cornerRadius.toValue = to
         

@@ -117,9 +117,9 @@ internal enum AnimationEnums : String {
         case .strokeEnd:
             return AnimationKeyPaths.strokeEnd
         case .x:
-            return AnimationKeyPaths.positionY
-        case .y:
             return AnimationKeyPaths.positionX
+        case .y:
+            return AnimationKeyPaths.positionY
         case .origin:
             return AnimationKeyPaths.boundsOrigin
         case .originX:

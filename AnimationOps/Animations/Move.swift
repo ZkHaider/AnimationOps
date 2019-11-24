@@ -32,7 +32,8 @@ extension Animating where Base: CALayer {
                      y: CGFloat) -> Animating<Base> {
         
         // 1. Declare type
-        let type: AnimationEnums = .origin
+        let type: AnimationEnums = .x
+        self.animationEnums.append(type)
         
         let from = self.base.bounds.origin
         var to = from
@@ -40,7 +41,7 @@ extension Animating where Base: CALayer {
         to.y += y
         
         // 2. Create animation
-        let move = CABasicAnimation(keyPath: type.rawValue)
+        let move = CABasicAnimation(keyPath: type.keyPath)
         move.fromValue = from.nsValue
         move.toValue = to.nsValue
         
@@ -81,6 +82,7 @@ extension Animating where Base: View {
         
         // 1. Declare type
         let type: AnimationEnums = .origin
+        self.animationEnums.append(type)
         
         let from = self.base.layer.bounds.origin
         var to = from

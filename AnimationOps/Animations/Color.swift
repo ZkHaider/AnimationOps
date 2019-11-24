@@ -22,12 +22,13 @@ extension Animating where Base: CALayer {
         
         // 1. Declare type
         let type: AnimationEnums = .backgroundColor
+        self.animationEnums.append(type)
         
         let from = self.base.backgroundColor
         let to = color.cgColor
         
         // 2. Create animation
-        let backgroundColor = CABasicAnimation(keyPath: type.rawValue)
+        let backgroundColor = CABasicAnimation(keyPath: type.keyPath)
         backgroundColor.fromValue = from
         backgroundColor.toValue = to
         
@@ -47,12 +48,13 @@ extension Animating where Base: CALayer {
         
         // 1. Declare type
         let type: AnimationEnums = .borderColor
+        self.animationEnums.append(type)
         
         let from = self.base.borderColor
         let to = color.cgColor
         
         // 2. Create animation
-        let borderColor = CABasicAnimation(keyPath: type.rawValue)
+        let borderColor = CABasicAnimation(keyPath: type.keyPath)
         borderColor.fromValue = from
         borderColor.toValue = to
         
@@ -72,12 +74,13 @@ extension Animating where Base: CALayer {
         
         // 1. Declare type
         let type: AnimationEnums = .shadowColor
+        self.animationEnums.append(type)
         
         let from = self.base.shadowColor
         let to = color.cgColor
         
         // 2. Create animation
-        let shadowColor = CABasicAnimation(keyPath: type.rawValue)
+        let shadowColor = CABasicAnimation(keyPath: type.keyPath)
         shadowColor.fromValue = from
         shadowColor.toValue = to
         
@@ -101,12 +104,13 @@ extension Animating where Base: CAShapeLayer {
         
         // 1. Declare type
         let type: AnimationEnums = .fillColor
+        self.animationEnums.append(type)
         
         let from = self.base.fillColor
         let to = color.cgColor
         
         // 2. Create animation
-        let fillColor = CABasicAnimation(keyPath: type.rawValue)
+        let fillColor = CABasicAnimation(keyPath: type.keyPath)
         fillColor.fromValue = from
         fillColor.toValue = to
         
@@ -126,12 +130,13 @@ extension Animating where Base: CAShapeLayer {
         
         // 1. Declare type
         let type: AnimationEnums = .strokeColor
+        self.animationEnums.append(type)
         
         let from = self.base.strokeColor
         let to = color.cgColor
         
         // 2. Create animation
-        let strokeColor = CABasicAnimation(keyPath: type.rawValue)
+        let strokeColor = CABasicAnimation(keyPath: type.keyPath)
         strokeColor.fromValue = from
         strokeColor.toValue = to
         
@@ -155,12 +160,13 @@ extension Animating where Base: View {
         
         // 1. Declare type
         let type: AnimationEnums = .backgroundColor
+        self.animationEnums.append(type)
         
         let from = self.base.layer.backgroundColor
         let to = color.cgColor
         
         // 2. Create animation
-        let backgroundColor = CABasicAnimation(keyPath: type.rawValue)
+        let backgroundColor = CABasicAnimation(keyPath: type.keyPath)
         backgroundColor.fromValue = from
         backgroundColor.toValue = to
         
@@ -180,12 +186,13 @@ extension Animating where Base: View {
         
         // 1. Declare type
         let type: AnimationEnums = .borderColor
+        self.animationEnums.append(type)
         
         let from = self.base.layer.borderColor
         let to = color.cgColor
         
         // 2. Create animation
-        let borderColor = CABasicAnimation(keyPath: type.rawValue)
+        let borderColor = CABasicAnimation(keyPath: type.keyPath)
         borderColor.fromValue = from
         borderColor.toValue = to
         
@@ -205,12 +212,13 @@ extension Animating where Base: View {
         
         // 1. Declare type
         let type: AnimationEnums = .shadowColor
+        self.animationEnums.append(type)
         
         let from = self.base.layer.shadowColor
         let to = color.cgColor
         
         // 2. Create animation
-        let shadowColor = CABasicAnimation(keyPath: type.rawValue)
+        let shadowColor = CABasicAnimation(keyPath: type.keyPath)
         shadowColor.fromValue = from
         shadowColor.toValue = to
         
